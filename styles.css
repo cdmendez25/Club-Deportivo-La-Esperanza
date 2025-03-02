@@ -1,13 +1,25 @@
-.container {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.position_general {
-    flex: 1;
-}
-.position_game {
-    flex: 1;
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-items: stretch;
+        width: 100%;
+    }
+    .position_general {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .position_game_8 {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .position_game_11 {
+        width: 100%;
+    }
 }
