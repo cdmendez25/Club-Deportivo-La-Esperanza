@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.position_general {
+    flex: 1;
+}
+.position_game {
+    flex: 1;
+}
