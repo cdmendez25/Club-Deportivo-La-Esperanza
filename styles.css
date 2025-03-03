@@ -23,3 +23,47 @@
         width: 100%;
     }
 }
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-items: stretch;
+        width: 100%;
+    }
+    .position_general {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .position_game_8 {
+        width: 100%;
+    }
+    .position_game_11 {
+        width: 48%;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .container {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-items: stretch;
+        width: 100%;
+    }
+    .position_general {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .position_game_8 {
+        width: 49%;
+    }
+    .position_game_11 {
+        width: 49%;
+    }
+}
