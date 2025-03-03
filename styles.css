@@ -1,5 +1,59 @@
+body {
+    background-color: aliceblue;
+}
+a {
+    color: white;
+}
+table {
+    border: none;
+    font-family: Georgia;
+}
+th {
+    background-color:#003366;
+    color: white;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    font-size: 15px;
+    font-family: monospace;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container_header {
+    font-family: Georgia;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 300px;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.vs {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.table_content {
+    background-color: #fc8c42;
+    text-align: center;
+    border-radius: 5px;
+}
 @media screen and (max-width: 480px) {
-    .container {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    .container_header {
+        display: flex;
+        gap: 25px;
+    }
+    .container_main {
         display: flex;
         gap: 25px;
         flex-wrap: wrap;
@@ -18,13 +72,24 @@
         display: block;
         width: 100%;
         overflow-x: auto;
+        white-space: nowrap;
     }
     .position_game_11 {
         width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-    .container {
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    .container_header {
+        display: flex;
+        gap: 25px;
+    }
+    .container_main {
         display: flex;
         gap: 25px;
         flex-wrap: wrap;
@@ -34,19 +99,28 @@
         width: 100%;
     }
     .position_general {
+        display: block;
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
     }
     .position_game_8 {
         width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
     }
     .position_game_11 {
-        width: 48%;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
 @media screen and (min-width: 1025px) {
-    .container {
+    img {
+        width: 250px;
+        height: 250px;
+    }
+    .container_main {
         display: flex;
         gap: 25px;
         flex-wrap: wrap;
