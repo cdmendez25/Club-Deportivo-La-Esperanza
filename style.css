@@ -69,16 +69,13 @@ footer {
         overflow-x: auto;
         white-space: nowrap;
     }
-    .position_game_8 {
-        display: block;
+    .games {
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
     }
-    .position_game_11 {
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap;
+    #games_8 {
+        display: block;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px){
@@ -105,15 +102,13 @@ footer {
         overflow-x: auto;
         white-space: nowrap;
     }
-    .position_game_8 {
+    .games {
         width: 100%;
         overflow-x: auto;
         white-space: nowrap;
     }
-    .position_game_11 {
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap;
+    #games_8 {
+        display: block;
     }
 }
 @media screen and (min-width: 1025px) {
@@ -135,10 +130,9 @@ footer {
         overflow-x: auto;
         white-space: nowrap;
     }
-    .position_game_8 {
-        width: 49%;
-    }
-    .position_game_11 {
-        width: 49%;
+    .games {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
     }
 }
