@@ -25,69 +25,72 @@ table_row_1.forEach(cell => {
 table_row_2.forEach(cell => {
     cell.addEventListener("click", input_from_table);
 });
-
 table_row_4.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_5.forEach(cell => {
     cell.addEventListener("click", input_from_table);
 });
 table_row_6.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_8.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_9.forEach(cell => {
     cell.addEventListener("click", input_from_table);
 });
 table_row_10.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_12.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
-
+});
 table_row_general_2.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_3.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_5.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_6.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_8.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_9.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_11.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_12.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_14.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 table_row_general_15.forEach(cell => {
     cell.addEventListener("click", input_from_table);
-})
+});
 
 function input_from_table(event) {
     let cell = event.target;
-        let info = prompt("Ingrese la informacion que desea agregar a la celda");
+    let currentValue = cell.innerText;
+    let info = prompt("Ingrese la informacion que desea agregar a la celda", currentValue);
+
+    if (info !== null) {
         cell.innerText = info;
+        localStorage.setItem(cell.dataset.key, info);
+    }
 }
 
 function setCellKeys() {
     document.querySelectorAll(".games tbody tr td, .position_general tbody tr td").forEach((cell, index) => {
-        cell.dataset.key = `cell_${index}`;
+        cell.dataset.key = `cell_${index}`;  // Usar un identificador único por celda
     });
 }
 
@@ -95,7 +98,7 @@ function loadTableData() {
     document.querySelectorAll(".games tbody tr td, .position_general tbody tr td").forEach((cell) => {
         let storedValue = localStorage.getItem(cell.dataset.key);
         if (storedValue) {
-            cell.innerText = storedValue;
+            cell.innerText = storedValue;  // Cargar el valor guardado
         }
     });
 }
